@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Himalayan Sentinel</title>
+    <style>
+        /* Gorkhapatra-inspired styling */
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            color: #000;
+            background-color: #f9f7e8;
+            margin: 0;
+            padding: 0;
+            max-width: 1000px;
+            margin: 0 auto;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Newspaper header */
+        .masthead {
+            background: #8B0000; /* Deep red */
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 3px double #fff;
+        }
+
+        .masthead h1 {
+            font-family: 'Cambria', serif;
+            font-size: 2.5rem;
+            margin: 0;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+        }
+
+        .masthead .subhead {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Newspaper columns */
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        /* Main article styling */
+        .main-article {
+            border-bottom: 1px solid #8B0000;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .main-article h2 {
+            font-family: 'Cambria', serif;
+            color: #8B0000;
+            border-bottom: 1px solid #8B0000;
+            padding-bottom: 0.5rem;
+        }
+
+        .main-article .dateline {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .main-article img {
+            width: 100%;
+            border: 1px solid #ddd;
+            margin: 1rem 0;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            border-left: 1px solid #8B0000;
+            padding-left: 1rem;
+        }
+
+        .sidebar h3 {
+            background: #8B0000;
+            color: white;
+            padding: 0.5rem;
+            margin: 0 -1rem 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        .classifieds {
+            background: #f0e6cc;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border: 1px dashed #8B0000;
+        }
+
+        .classifieds h4 {
+            text-align: center;
+            border-bottom: 1px solid #8B0000;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        /* Newsletter form */
+        .newsletter {
+            background: #f0f0f0;
+            padding: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .newsletter input[type="email"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border: 1px solid #ccc;
+        }
+
+        .newsletter button {
+            background: #8B0000;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            background: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .sidebar {
+                border-left: none;
+                border-top: 1px solid #8B0000;
+                padding-left: 0;
+                padding-top: 1rem;
+            }
+        }
+
+        /* Special newspaper elements */
+        .headline {
+            font-size: 1.8rem;
+            font-weight: bold;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+
+        .byline {
+            font-style: italic;
+            color: #555;
+        }
+
+        .pull-quote {
+            float: right;
+            width: 40%;
+            margin: 0 0 1rem 1rem;
+            padding: 1rem;
+            background: #f0e6cc;
+            border-left: 3px solid #8B0000;
+            font-style: italic;
+            font-size: 1.1rem;
+        }
+
+        .advertisement {
+            background: #e6e6e6;
+            padding: 1rem;
+            text-align: center;
+            border: 1px dashed #8B0000;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Newspaper Masthead -->
+    <div class="masthead">
+        <h1>THE HIMALAYAN SENTINEL</h1>
+        <div class="subhead">ESTD. 2024 | KATHMANDU | VOL. 1, NO. 1</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Main Articles -->
+        <main>
+            <article class="main-article">
+                <span class="dateline">KATHMANDU, TUESDAY —</span>
+                <h2>LOCAL STUDENT DISCOVERS 3AM IS NOT OPTIMAL STUDY TIME</h2>
+                <div class="byline">By Our Sleep-Deprived Correspondent</div>
+                
+                <img src="data:image/jpeg;base64,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" alt="Sleeping student">
+                
+                <p>In a groundbreaking discovery that shocked exactly no one, local student <em>Adriza Aryal</em> confirmed yesterday that 3:00 AM is, in fact, not the best time for productive studying. The revelation came after the student attempted to solve calculus problems while battling what experts describe as "severe eyelid heaviness."</p>
+                
+                <div class="pull-quote">
+                    "I swear I understood integration at 2:45 AM, but by 3:15 it looked like hieroglyphics," the student reported.
+                </div>
+                
+                <p>Eyewitnesses report seeing the student alternating between frantic note-taking and staring blankly at the same physics equation for 27 minutes straight. "At one point they were annotating their notebook with what appeared to be drool," said roommate <em>(actually her mom)</em>.</p>
+                
+                <p>Education experts warn that this phenomenon, known as "Delusional Nocturnal Productivity Syndrome," affects thousands of Nepali students during exam season. Symptoms include:</p>
+                
+                <ul>
+                    <li>Believing you're making progress when actually writing nonsense</li>
+                    <li>Sudden urges to completely reorganize your study materials at 4 AM</li>
+                    <li>Developing personal theories about how sleep is a capitalist conspiracy</li>
+                </ul>
+                
+                <p>The student in question reportedly powered through with a dangerous cocktail of instant coffee and determination, only to wake up with their face stuck to their chemistry textbook. "I think I dreamed the solutions," they mumbled before passing out for 14 hours straight.</p>
+            </article>
+            
+            <article class="main-article">
+                <span class="dateline">KATHMANDU, TUESDAY —</span>
+                <h2>BREAKING: MOM ASKS 'HAVE YOU EATEN?' FOR 17TH CONSECUTIVE DAY</h2>
+                <div class="byline">By Our Well-Fed Correspondent</div>
+                
+                <p>In what scientists are calling "the most predictable event in Nepali households," local mother <em>[YOUR MOM'S NAME]</em> today asked her child if they had eaten for the seventeenth consecutive day, despite the child having just finished a full meal in her presence.</p>
+                
+                <p>"I literally just ate dal bhat in front of her," said <em>Adriza Aryal</em>, the subject of the inquiry. "She watched me have seconds. She served me the food. And yet, 27 minutes later: 'Khana khais?'"</p>
+                
+                <p>Cultural anthropologists suggest this behavior stems from an ancient Nepali parenting algorithm where:</p>
+                
+                <ol>
+                    <li>If child is within 3 meters → Ask if they've eaten</li>
+                    <li>If child is eating → Ask if they want more</li>
+                    <li>If child is full → Ask when they'll eat next</li>
+                </ol>
+                
+                <p>"It's basically our version of 'I love you,'" explained Dr. <em>Delusional</em> of Tribhuvan University. "The Nepali maternal brain cannot compute that their offspring might be adequately nourished."</p>
+                
+                <p>At press time, the student was seen sneaking snacks while claiming not to be hungry, in what experts describe as a classic case of "Reverse Nepali Teenage Logic."</p>
+            </article>
+        </main>
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="classifieds">
+                <h4>CLASSIFIED ADVERTISEMENTS</h4>
+                <p><strong>WANTED:</strong> University seeking motivated Nepali student. Must tolerate existential crises, enjoy overthinking, and have questionable sleep schedule. Generous financial aid preferred. Apply within.</p>
+                
+                <p><strong>FOR SALE:</strong> Barely used Physics textbook. Slightly traumatized by mock exams. Contains mysterious stains (probably tea). Best offer.</p>
+                
+                <p><strong>LOST:</strong> My will to live after seeing another "How I Got Into Harvard" YouTube video. If found, please return to [YOUR NAME], Kathmandu.</p>
+            </div>
+            
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get the latest dispatches from our sleep-deprived correspondents</p>
+                <input type="email" placeholder="Your email address">
+                <button>Subscribe</button>
+            </div>
+            
+            <div class="advertisement">
+                <h3>ADVERTISEMENT</h3>
+                <p><strong>STUDY TONIC™</strong> - Guaranteed* to help you memorize the entire NEB syllabus in one night! (*Not actually guaranteed. May cause hallucinations.)</p>
+                <p>Only Rs. 999! Call now: 01-XXXXXXX</p>
+            </div>
+            
+            <h3>LATEST HEADLINES</h3>
+            <ul>
+                <li><a href="#">Kathmandu Traffic: Theoretical Origins in Chaos Magic</a></li>
+                <li><a href="#">Dhaka Topi: Advanced Aerodynamic Properties (Unverified)</a></li>
+                <li><a href="#">Local Student Claims They'll "Start Studying Tomorrow" for 47th Time</a></li>
+            </ul>
+            
+            <div class="advertisement">
+                <h3>PUBLIC NOTICE</h3>
+                <p>The management accepts no responsibility for:</p>
+                <ul>
+                    <li>Factual inaccuracies</li>
+                    <li>Poor life choices inspired by our articles</li>
+                    <li>Existential crises caused by college application process</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 The Himalayan Sentinel | All rights reserved | Today's horoscope: "A surprising opportunity will come your way (probably another college application deadline)"
+    </footer>
+</body>
+</html>
